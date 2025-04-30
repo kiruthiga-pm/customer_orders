@@ -9,7 +9,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 /**
- * @author Teja K
+ * @author Kiruthiga P M
  */
 
 @Entity

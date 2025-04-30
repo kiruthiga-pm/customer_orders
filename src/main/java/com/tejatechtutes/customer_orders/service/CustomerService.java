@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * @author Teja K
+ * @author Kiruthiga P M
  */
 @Service
 public class CustomerService {

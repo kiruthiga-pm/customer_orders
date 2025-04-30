@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * @author Teja K
+ * @author Kiruthiga P M
  */
 @RestController
 @RequestMapping("/api/admin")

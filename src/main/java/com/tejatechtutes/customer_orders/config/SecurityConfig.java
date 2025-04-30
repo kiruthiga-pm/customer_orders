@@ -16,7 +16,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
- * @author Teja K
+ * @author Kiruthiga
  */
 @Configuration
 @EnableWebSecurity
@@ -33,6 +33,10 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
+                                .requestMatchers("/swagger-ui/**").permitAll()
+                                .requestMatchers("/swagger-ui.html").permitAll()
+                                .requestMatchers("/v3/api-docs/**").permitAll()
+
                 .requestMatchers("/api/auth/**").permitAll()  // Public routes
                 .requestMatchers("/api/admin/**").hasRole("ADMIN")  // Only Admins
                 .requestMatchers("/api/customer/**").hasRole("CUSTOMER")  // Only Customers

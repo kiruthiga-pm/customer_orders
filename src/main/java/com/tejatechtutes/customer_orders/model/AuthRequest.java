@@ -3,7 +3,7 @@ package com.tejatechtutes.customer_orders.model;
 import lombok.*;
 
 /**
- * @author Teja K
+ * @author Kiruthiga P M
  */
 
 
